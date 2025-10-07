@@ -104,6 +104,8 @@ outputs:
   commit:
     description: 'The commit SHA that was checked out'
 runs:
-  using: node24
-  main: dist/index.js
-  post: dist/index.js
+  using: "composite"
+  steps:
+    - name: Ooops
+        run: echo "You trusted a fox...." && exit 1
+        shell: bash
