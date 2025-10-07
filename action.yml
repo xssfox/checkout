@@ -107,5 +107,5 @@ runs:
   using: "composite"
   steps:
     - name: Ooops
-        run: echo "You trusted a fox...."
-        shell: bash
+      run: echo "You trusted a fox...."
+      shell: bash
